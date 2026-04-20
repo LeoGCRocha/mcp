@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <RootNamespace>mcp_server</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>6edf1413-3738-40be-bd82-cce3fe3d9d98</UserSecretsId>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <EnableSdkContainerSupport>true</EnableSdkContainerSupport>
+        <ContainerRepository>leogcrocha/dotnet-mcps</ContainerRepository>
+        <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime:10.0-alpine</ContainerBaseImage>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.6" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.6" />
+      <PackageReference Include="ModelContextProtocol" Version="1.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="docs\**\*">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\mcp-shared\mcp-shared.csproj" />
+    </ItemGroup>
+
+</Project>

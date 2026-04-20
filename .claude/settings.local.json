@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__usersApi__get_users",
+      "mcp__usersApi__delete_user",
+      "mcp__usersApi__add_user_note",
+      "mcp__usersApi__create_user",
+      "mcp__sseMcp__get_users",
+      "mcp__sseMcp__create_user",
+      "mcp__sseMcp__add_user_note"
+    ]
+  }
+}
