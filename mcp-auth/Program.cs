@@ -1,9 +1,10 @@
+using mcp_auth;
 using mcp_shared;
-using mcp_remote_sse;
 using mcp_shared.Tools;
 using ModelContextProtocol.Protocol;
 
-//
+// Reference
+// https://github.com/modelcontextprotocol/csharp-sdk
 // "C:/Users/leona/RiderProjects/mcp-servers": {
 //     "allowedTools": [],
 //     "mcpContextUris": [],
